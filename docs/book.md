@@ -2,7 +2,7 @@
 
 ## Create Book API
 
-Endpoint: POST /books
+Endpoint: `POST /books`
 
 Response body success:
 
@@ -38,7 +38,7 @@ Jika readPage lebih besar dari pageCount:
 
 ## Get Books API
 
-Endpoint: GET /books
+Endpoint: `GET /books`
 
 Response Body Success:
 
@@ -80,9 +80,100 @@ Jika catatan ada:
 }
 ```
 
+## Get Books API with Query Parameters (name)
+
+Endpoint: `GET /books?name=Dicoding`
+
+Response Body Success:
+
+```json
+{
+  "status": "success",
+  "data": {
+    "books": [
+      {
+        "id": "SzBxSR48gjWQRfeR",
+        "name": "Harry Potter",
+        "publisher": "Dicoding Indonesia"
+      },
+      {
+        "id": "FNk34Is4A4eIll2n",
+        "name": "Harry Potter",
+        "publisher": "Dicoding Indonesia"
+      },
+      {
+        "id": "Xo_hSF_9FmgT1_C8",
+        "name": "Harry Potter",
+        "publisher": "Dicoding Indonesia"
+      }
+    ]
+  }
+}
+```
+
+## Get Books API with Query Parameters (finished)
+
+Endpoint: `GET /books?finished=1`
+
+Response Body Success:
+
+```json
+{
+  "status": "success",
+  "data": {
+    "books": [
+      {
+        "id": "SzBxSR48gjWQRfeR",
+        "name": "Harry Potter",
+        "publisher": "Dicoding Indonesia"
+      },
+      {
+        "id": "FNk34Is4A4eIll2n",
+        "name": "Harry Potter",
+        "publisher": "Dicoding Indonesia"
+      },
+      {
+        "id": "Xo_hSF_9FmgT1_C8",
+        "name": "Harry Potter",
+        "publisher": "Dicoding Indonesia"
+      }
+    ]
+  }
+}
+```
+
+Endpoint: `GET /books?finished=0`
+
+Response Body Success:
+
+```json
+{
+  "status": "success",
+  "data": {
+    "books": [
+      {
+        "id": "SzBxSR48gjWQRfeR",
+        "name": "Harry Potter",
+        "publisher": "Dicoding Indonesia"
+      },
+      {
+        "id": "FNk34Is4A4eIll2n",
+        "name": "Harry Potter",
+        "publisher": "Dicoding Indonesia"
+      },
+      {
+        "id": "Xo_hSF_9FmgT1_C8",
+        "name": "Harry Potter",
+        "publisher": "Dicoding Indonesia"
+      }
+    ]
+  }
+}
+```
+
 ## Get Book API
 
-Endpoint: GET /books/:bookId
+Endpoint: `GET /books/:bookId`
 
 Response body success:
 
@@ -119,7 +210,7 @@ Response body error:
 
 ## Update Book API
 
-Endpoint: PUT /books/:bookId
+Endpoint: `PUT /books/:bookId`
 
 Response body success:
 
@@ -159,7 +250,7 @@ Jika readPage lebih besar dari pageCount:
 
 ## Delete Book API
 
-Endpoint: DELETE /books/:bookId
+Endpoint: `DELETE /books/:bookId`
 
 Response body success:
 
