@@ -30,4 +30,4 @@ yarn run start-dev
 
 ### Result testing with newman
 
-[Test Result Newman](./docs/result_test_newman.png)
+![Test Result Newman](./docs/image/result_test_newman.png "Test Result Newman")
